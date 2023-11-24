@@ -20,4 +20,23 @@ def spinbox_handler():
 spinbox = tk.Spinbox(win, from_=0, to=10, width=5, command=spinbox_handler)
 spinbox.pack(padx=10)
 
+def scale_hadler(value):
+    lbl.config(text=value)
+
+scale = tk.Scale(win, from_=0, to=100, command=scale_hadler, orient="horizontal")
+scale.pack(pady=10)
+
+def check_button_handler():
+    print(checked_state.get())
+checked_state = tk.IntVar()
+check_button = tk.Checkbutton(win, text="Is on?", variable=checked_state, command=check_button_handler)
+check_button.pack()
+
+def radio_button_handler():
+    print(radio_state.get())
+radio_state = tk.IntVar()
+radio_button = tk.Radiobutton(win, text="opcja 1", value=1, variable=radio_state, command=radio_button_handler)
+radio_button.pack()
+radio_button2 = tk.Radiobutton(win, text="opcja 2", value=2, variable=radio_state, command=radio_button_handler)
+radio_button2.pack()
 win.mainloop()
