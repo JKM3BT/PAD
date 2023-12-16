@@ -4,7 +4,7 @@ win = tk.Tk()
 win.title("Formularz dołączenia do Mafii")
 win.minsize(width=370,height=750)
 separator = ttk.Separator(win, orient="horizontal")
-class TextReleatedForms:
+class TextRelatedForms:
     def __init__(self, text, horizontal, vertical):
         self.text = text
         self.horizontal = horizontal
@@ -15,7 +15,7 @@ class TextReleatedForms:
     def Text(horizontal,vertical):
         text = tk.Text(win, height=1, width=15)
         text.grid(column=horizontal, row=vertical)
-class IntReleatedForms:
+class IntRelatedForms:
     def __init__(self,horizontal,vertical, min_value, max_value):
         self.horizontal = horizontal
         self.vertical = vertical
@@ -49,29 +49,29 @@ class OtherForms:
         check_box2.grid(column=horizontal, row=vertical+1, sticky="W")
         check_box3.grid(column=horizontal, row=vertical+2, sticky="W")
     
-lbl_name = TextReleatedForms.Lbl("What's your name: ", 0, 0)
-text_name = TextReleatedForms.Text(1, 0)
-lbl_nickName = TextReleatedForms.Lbl("Your Nickname: ", 0, 1)
-text_nickName = TextReleatedForms.Text(1, 1)
+lbl_name = TextRelatedForms.Lbl("What's your name: ", 0, 0)
+text_name = TextRelatedForms.Text(1, 0)
+lbl_nickName = TextRelatedForms.Lbl("Your Nickname: ", 0, 1)
+text_nickName = TextRelatedForms.Text(1, 1)
 
-lbl_age = TextReleatedForms.Lbl("Your age: ", 2, 0)
-spinbox_age = IntReleatedForms.Spinbox(18, 100, 3, 0)
-lbl_adress = TextReleatedForms.Lbl("Your house number: ", 2, 1)
-spinbox_adress = IntReleatedForms.Spinbox(0, 1000, 3, 1)
+lbl_age = TextRelatedForms.Lbl("Your age: ", 2, 0)
+spinbox_age = IntRelatedForms.Spinbox(18, 100, 3, 0)
+lbl_adress = TextRelatedForms.Lbl("Your house number: ", 2, 1)
+spinbox_adress = IntRelatedForms.Spinbox(0, 1000, 3, 1)
 
-lbl_gender = TextReleatedForms.Lbl("Are you a boy or a girl: ", 0, 2)
+lbl_gender = TextRelatedForms.Lbl("Are you a boy or a girl: ", 0, 2)
 radioButton_gender = OtherForms.Radio_button("Boy", "Girl", 1, 2, 1, 2)
-lbl_outfit = TextReleatedForms.Lbl("Write what are you wearing right now: ", 0, 3)
-text_outfit = TextReleatedForms.Text(1, 3)
+lbl_outfit = TextRelatedForms.Lbl("Write what are you wearing right now: ", 0, 3)
+text_outfit = TextRelatedForms.Text(1, 3)
 separator.pack(fill="x")
-lbl_prison = TextReleatedForms.Lbl("Ever been to prison: ", 0, 5)
+lbl_prison = TextRelatedForms.Lbl("Ever been to prison: ", 0, 5)
 rdiobutton_prison = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 5)
-lbl_reason = TextReleatedForms.Lbl("Why you got to prison: ", 0, 6)
+lbl_reason = TextRelatedForms.Lbl("Why you got to prison: ", 0, 6)
 checkbox_reason = OtherForms.checkBox("You shot someone", "You kidnapped someone", "You blew up somebody's house", 1, 5)
 
-lbl_preferences = TextReleatedForms.Lbl("You like to eat: ", 0, 10)
+lbl_preferences = TextRelatedForms.Lbl("You like to eat: ", 0, 10)
 checkbox_preferences = OtherForms.checkBox("Garlic", "Pizza", "Salami", 1, 10)
 
-lbl_shoes = TextReleatedForms.Lbl("Do you know how to make cement shoes: ", 0, 13)
+lbl_shoes = TextRelatedForms.Lbl("Do you know how to make cement shoes: ", 0, 13)
 radioButton_shoes = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 13)
 win.mainloop()
