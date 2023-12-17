@@ -61,7 +61,7 @@ spinbox_adress = IntRelatedForms.Spinbox(0, 1000, 3, 1)
 
 lbl_gender = TextRelatedForms.Lbl("Are you a boy or a girl: ", 0, 2)
 radioButton_gender = OtherForms.Radio_button("Boy", "Girl", 1, 2, 1, 2)
-lbl_outfit = TextRelatedForms.Lbl("Write what are you wearing right now: ", 0, 3)
+lbl_outfit = TextRelatedForms.Lbl("Write where are you working now: ", 0, 3)
 text_outfit = TextRelatedForms.Text(1, 3)
 
 ttk.Separator(orient="horizontal").grid(row=4, columnspan=4, sticky="ew")
@@ -94,8 +94,20 @@ lbl_godFather = TextRelatedForms.Lbl("Have you ever seen the GodFather (or just 
 radioButton_godFather = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 21)
 
 def Submit():
-    file = open("resultFile.txt","w")
-    file.write()
+    with open("resultFile.txt", "a") as file:
+        file.write(f"Name: {text_name.get()}\n")
+        file.write(f"Nickname: {text_nickName.get()}\n")
+        file.write(f"Age: {spinbox_age.get()}\n")
+        file.write(f"House Number: {spinbox_adress.get()}\n")
+        file.write(f"Gender: {radioButton_gender.get()}\n")
+        file.write(f"Work: {text_outfit.get()}\n")
+        file.write(f"Been to prison: {radiobutton_prison.get()}\n")
+        file.write(f"for: {checkbox_reason.get()}\n")
+        file.write(f"Likes to eat: {checkbox_preferences.get()}\n")
+        file.write(f"knows how to make cement shoes {radioButton_shoes.get()}\n")
+        file.write(f"Does know how to drive {radioButton_car.get()}\n")
+        file.write(f"{checkbox_kindOfCar.get()}\n")
+        file.write(f"{radioButton_godFather.get()}\n")
     file.close()
 tk.Button(win, text="Submit", command=Submit).grid(column=1, row=22, sticky="w")
 
