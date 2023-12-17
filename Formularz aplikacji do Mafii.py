@@ -2,8 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 win = tk.Tk()
 win.title("Formularz dołączenia do Mafii")
-win.minsize(width=370,height=750)
-separator = ttk.Separator(win, orient="horizontal")
+win.minsize(width=370,height=500)
 class TextRelatedForms:
     def __init__(self, text, horizontal, vertical):
         self.text = text
@@ -13,7 +12,8 @@ class TextRelatedForms:
         lbl = tk.Label(win, text=text)
         lbl.grid(column=horizontal, row=vertical)
     def Text(horizontal,vertical):
-        text = tk.Text(win, height=1, width=15)
+        textVar = tk.StringVar()
+        text = tk.Entry(win, width=15, textvariable=textVar)
         text.grid(column=horizontal, row=vertical)
 class IntRelatedForms:
     def __init__(self,horizontal,vertical, min_value, max_value):
@@ -63,15 +63,40 @@ lbl_gender = TextRelatedForms.Lbl("Are you a boy or a girl: ", 0, 2)
 radioButton_gender = OtherForms.Radio_button("Boy", "Girl", 1, 2, 1, 2)
 lbl_outfit = TextRelatedForms.Lbl("Write what are you wearing right now: ", 0, 3)
 text_outfit = TextRelatedForms.Text(1, 3)
-separator.pack(fill="x")
+
+ttk.Separator(orient="horizontal").grid(row=4, columnspan=4, sticky="ew")
+
 lbl_prison = TextRelatedForms.Lbl("Ever been to prison: ", 0, 5)
-rdiobutton_prison = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 5)
+radiobutton_prison = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 5)
 lbl_reason = TextRelatedForms.Lbl("Why you got to prison: ", 0, 6)
-checkbox_reason = OtherForms.checkBox("You shot someone", "You kidnapped someone", "You blew up somebody's house", 1, 5)
+checkbox_reason = OtherForms.checkBox("You shot someone", "You kidnapped someone", "You blew up somebody's house", 1, 6)
+
+ttk.Separator(orient="horizontal").grid(row=9, columnspan=4, sticky="ew")
 
 lbl_preferences = TextRelatedForms.Lbl("You like to eat: ", 0, 10)
 checkbox_preferences = OtherForms.checkBox("Garlic", "Pizza", "Salami", 1, 10)
 
-lbl_shoes = TextRelatedForms.Lbl("Do you know how to make cement shoes: ", 0, 13)
-radioButton_shoes = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 13)
+ttk.Separator(orient="horizontal").grid(row=13, columnspan=4, sticky="ew")
+
+lbl_shoes = TextRelatedForms.Lbl("Do you know how to make cement shoes: ", 0, 14)
+radioButton_shoes = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 14)
+
+ttk.Separator(orient="horizontal").grid(row=15, columnspan=4, sticky="ew")
+
+lbl_car = TextRelatedForms.Lbl("Can you drive a car: ", 0, 16)
+radioButton_car = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 16)
+lbl_kindOfCar = TextRelatedForms.Lbl("What kind of car can you drive: ", 0, 17)
+checkbox_kindOfCar = OtherForms.checkBox("Heavy", "Civilian", "Armored", 1, 17)
+
+ttk.Separator(orient="horizontal").grid(row=20, columnspan=4, sticky="ew")
+
+lbl_godFather = TextRelatedForms.Lbl("Have you ever seen the GodFather (or just the movie): ", 0, 21)
+radioButton_godFather = OtherForms.Radio_button("Yes", "No", 1, 2, 1, 21)
+
+def Submit():
+    file = open("resultFile.txt","w")
+    file.write()
+    file.close()
+tk.Button(win, text="Submit", command=Submit).grid(column=1, row=22, sticky="w")
+
 win.mainloop()
