@@ -1,0 +1,76 @@
+﻿<Window x:Class="JkmGr1App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JkmGr1App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Grid.Column="1" Fill="LimeGreen" Margin="10,20,30,40" />
+        <Rectangle Grid.Row="1" Grid.Column="2" Fill="Aqua" Margin="40,30,20,10"/>
+
+        <TextBlock Grid.Row="0" 
+                   Grid.Column="2" 
+                   FontSize="25" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">_igger</TextBlock>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Rectangle Grid.Row="1" Grid.Column="1" Fill="Coral"/>
+            <Rectangle Grid.Row="0" Grid.Column="1" Fill="LimeGreen"/>
+            <Rectangle Grid.Row="2" Grid.Column="0" Fill="DarkBlue"/>
+            <Rectangle Grid.Row="1" Grid.Column="2" Fill="Purple"/>
+            <Rectangle Grid.Row="0" Grid.Column="0" Fill="Yellow"/>
+            <Rectangle Grid.Row="1" Grid.Column="0" Fill="Red"/>
+            <Rectangle Grid.Row="0" Grid.Column="2" Fill="Brown"/>
+            <Rectangle Grid.Row="2" Grid.Column="1" Fill="DeepPink"/>
+            <Rectangle Grid.Row="2" Grid.Column="2" Fill="DeepSkyBlue"/>
+        </Grid>
+    </Grid>-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--<UniformGrid>
+            <Button FontSize="30" Margin="10">1</Button>
+            <Button  FontSize="30" Margin="10">2</Button>
+            <Button  FontSize="30" Margin="10">3</Button>
+            <Button  FontSize="30" Margin="10">4</Button>
+            <Button  FontSize="30" Margin="10">5</Button>
+            <Button  FontSize="30" Margin="10">6</Button>
+            <Button  FontSize="30" Margin="10">7</Button>
+            <Button  FontSize="30" Margin="10">8</Button>
+            <Button  FontSize="30" Margin="10">9</Button>
+        </UniformGrid>-->
+        <StackPanel Orientation="Vertical">
+            <Button Margin="20" Click="Dom">Wyświetl "DO DOMU"</Button>
+            <Button Margin="20" Click="Klasa">Wyświetl "POZOSTAŃ W KLASIE"</Button>
+            <Button Margin="20" Click="Nie_Wiem">Wyświetl "NIE WIEM CO ROBIĆ"</Button>
+        </StackPanel>
+        <TextBlock x:Name="Tekst" Grid.Column="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="24" Text="To jest domyślny tekst"/>
+    </Grid>
+</Window>
