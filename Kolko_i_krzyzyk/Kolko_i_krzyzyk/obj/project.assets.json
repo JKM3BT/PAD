@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\III-TIE_23\\Desktop\\Misha Klishin\\PAD\\2polrocze\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk.csproj",
+      "projectUniqueName": "C:\\Users\\III-TIE_23\\Documents\\JKM\\PAD\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk.csproj",
       "projectName": "Kolko_i_krzyzyk",
-      "projectPath": "C:\\Users\\III-TIE_23\\Desktop\\Misha Klishin\\PAD\\2polrocze\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk.csproj",
+      "projectPath": "C:\\Users\\III-TIE_23\\Documents\\JKM\\PAD\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk.csproj",
       "packagesPath": "C:\\Users\\III-TIE_23\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\III-TIE_23\\Desktop\\Misha Klishin\\PAD\\2polrocze\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk\\obj\\",
+      "outputPath": "C:\\Users\\III-TIE_23\\Documents\\JKM\\PAD\\Kolko_i_krzyzyk\\Kolko_i_krzyzyk\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\III-TIE_23\\AppData\\Roaming\\NuGet\\NuGet.Config",
