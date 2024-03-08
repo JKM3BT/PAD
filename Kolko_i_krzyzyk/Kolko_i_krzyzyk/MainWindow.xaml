@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kolko_i_krzyzyk"
         mc:Ignorable="d"
-        Title="Kółko i krzyżyk" Height="600" Width="600">
+        Title="Kółko i krzyżyk" Height="800" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -16,15 +17,23 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="btn0" Content="?" FontSize="80px" Margin="10px" Grid.Row="0" Grid.Column="0" Click="btn_Click"/>
-        <Button x:Name="btn1" Content="?" FontSize="80px" Margin="10px" Grid.Row="0" Grid.Column="1" Click="btn_Click"/>
-        <Button x:Name="btn2" Content="?" FontSize="80px" Margin="10px" Grid.Row="0" Grid.Column="2" Click="btn_Click"/>
-        <Button x:Name="btn3" Content="?" FontSize="80px" Margin="10px" Grid.Row="1" Grid.Column="0" Click="btn_Click"/>
-        <Button x:Name="btn4" Content="?" FontSize="80px" Margin="10px" Grid.Row="1" Grid.Column="1" Click="btn_Click"/>
-        <Button x:Name="btn5" Content="?" FontSize="80px" Margin="10px" Grid.Row="1" Grid.Column="2" Click="btn_Click"/>
-        <Button x:Name="btn6" Content="?" FontSize="80px" Margin="10px" Grid.Row="2" Grid.Column="0" Click="btn_Click"/>
-        <Button x:Name="btn7" Content="?" FontSize="80px" Margin="10px" Grid.Row="2" Grid.Column="1" Click="btn_Click"/>
-        <Button x:Name="btn8" Content="?" FontSize="80px" Margin="10px" Grid.Row="2" Grid.Column="2" Click="btn_Click"/>
+        <Button x:Name="btn0" Content="" FontSize="80px" Grid.Row="0" Grid.Column="0" Click="btn_Click"/>
+        <Button x:Name="btn1" Content="" FontSize="80px" Grid.Row="0" Grid.Column="1" Click="btn_Click"/>
+        <Button x:Name="btn2" Content=" " FontSize="80px" Grid.Row="0" Grid.Column="2" Click="btn_Click"/>
+        <Button x:Name="btn3" Content=" " FontSize="80px" Grid.Row="0" Grid.Column="3" Click="btn_Click"/>
+        <Button x:Name="btn4" Content=" " FontSize="80px" Grid.Row="1" Grid.Column="0" Click="btn_Click"/>
+        <Button x:Name="btn5" Content=" " FontSize="80px" Grid.Row="1" Grid.Column="1" Click="btn_Click"/>
+        <Button x:Name="btn6" Content=" " FontSize="80px" Grid.Row="1" Grid.Column="2" Click="btn_Click"/>
+        <Button x:Name="btn7" Content=" " FontSize="80px" Grid.Row="1" Grid.Column="3" Click="btn_Click"/>
+        <Button x:Name="btn8" Content=" " FontSize="80px" Grid.Row="2" Grid.Column="0" Click="btn_Click"/>
+        <Button x:Name="btn9" Content=" " FontSize="80px" Grid.Row="2" Grid.Column="1" Click="btn_Click"/>
+        <Button x:Name="btn10" Content=" " FontSize="80px" Grid.Row="2" Grid.Column="2" Click="btn_Click"/>
+        <Button x:Name="btn11" Content=" " FontSize="80px" Grid.Row="2" Grid.Column="3" Click="btn_Click"/>
+        <Button x:Name="btn12" Content=" " FontSize="80px" Grid.Row="3" Grid.Column="0" Click="btn_Click"/>
+        <Button x:Name="btn13" Content=" " FontSize="80px" Grid.Row="3" Grid.Column="1" Click="btn_Click"/>
+        <Button x:Name="btn14" Content=" " FontSize="80px" Grid.Row="3" Grid.Column="2" Click="btn_Click"/>
+        <Button x:Name="btn15" Content=" " FontSize="80px" Grid.Row="3" Grid.Column="3" Click="btn_Click"/>
     </Grid>
 </Window>
