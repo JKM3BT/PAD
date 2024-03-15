@@ -38,3 +38,4 @@ C:\Users\III-TIE_23\Documents\JKM\PAD\Kolko_i_krzyzyk\Kolko_i_krzyzyk\obj\Debug\
 C:\Users\III-TIE_23\Documents\JKM\PAD\Kolko_i_krzyzyk\Kolko_i_krzyzyk\obj\Debug\net6.0-windows\Kolko_i_krzyzyk.pdb
 C:\Users\III-TIE_23\Documents\JKM\PAD\Kolko_i_krzyzyk\Kolko_i_krzyzyk\obj\Debug\net6.0-windows\Kolko_i_krzyzyk.genruntimeconfig.cache
 C:\Users\III-TIE_23\Documents\JKM\PAD\Kolko_i_krzyzyk\Kolko_i_krzyzyk\obj\Debug\net6.0-windows\ref\Kolko_i_krzyzyk.dll
+C:\Users\III-TIE_23\Documents\JKM\PAD\Kolko_i_krzyzyk\Kolko_i_krzyzyk\obj\Debug\net6.0-windows\Kolko_i_krzyzyk.sourcelink.json
